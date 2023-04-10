@@ -58,14 +58,13 @@ const dataObj = JSON.parse(data);
 
 const server = http.createServer((req, res) => {
   const { query, pathname } = url.parse(req.url, true);
-
   //OVERVIEW
   if (pathname === "/" || pathname === "/overview") {
     res.writeHead(200, { "content-type": "text/html" });
     const cardsHtml = dataObj
       .map((el) => replaceTemplate(tempCard, el))
       .join("");
-    const output = tempOverview.replace("{%PRODUCT_CARDS%}", cardsHtml);
+    const output = tempOverview.replace("{%PRODUCT_CARD%}", cardsHtml);
     res.end(output);
 
     //PRODUCT
