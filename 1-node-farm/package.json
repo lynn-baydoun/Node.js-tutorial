@@ -1,5 +1,15 @@
 {
   "dependencies": {
-    "nodemon": "^2.0.22"
-  }
+    "nodemon": "^2.0.22",
+    "slugify": "~1.6.6"
+  },
+  "name": "node-farm",
+  "version": "1.0.0",
+  "description": "learning Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "lynn baydoun",
+  "license": "ISC"
 }
