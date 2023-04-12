@@ -5,7 +5,7 @@
 //   multiply(a, b) {
 //     return a * b;
 //   }
-//   devide(a, b) {
+//   divide(a, b) {
 //     return a / b;
 //   }
 // }
@@ -16,7 +16,7 @@ module.exports = class {
   multiply(a, b) {
     return a * b;
   }
-  devide(a, b) {
+  divide(a, b) {
     return a / b;
   }
 };
